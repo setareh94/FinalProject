@@ -1,0 +1,60 @@
+
+body{
+	background-image:url('http://2.bp.blogspot.com/-xENVdt3MhCc/T9nt9XMGYUI/AAAAAAAAF9g/uzk393PA7Cc/s1600/Green-wallpaper-34.jpg');
+	text-align: center}
+	
+h1 {font-size:50px;
+	color: black;
+	
+    padding:10px;
+    background: :CC99FF;
+    margin:10px;
+}
+body { 
+    font-size:15px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#home {
+    position: absolute;
+    background: #88b7d5;
+    border: 2px solid #c2e1f5;
+   font-size: 15px;
+   font-family: Georgia, Serif;
+   top: 115px;
+   left: 30px;
+   z-index: 1;
+   -webkit-border-radius: 13px;
+   -moz-border-radius: 13px;
+   border-radius: 13px;
+}
+#home:after, #home:before {
+    right: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+#home:after {
+    border-color: rgba(136, 183, 213, 0);
+    border-right-color: #88b7d5;
+    border-width: 20px;
+    top: 50%;
+    margin-top: -20px;
+    -webkit-border-radius: 13px;
+   -moz-border-radius: 13px;
+   border-radius: 13px;
+}
+#home:before {
+    border-color: rgba(194, 225, 245, 0);
+    border-right-color: #c2e1f5;
+    border-width: 33px;
+    top: 50%;
+    margin-top: -33px;
+    -webkit-border-radius: 13px;
+   -moz-border-radius: 13px;
+   border-radius: 13px;
+}

@@ -1,0 +1,59 @@
+<html>
+
+<head>
+	<link href="/static/profile.css" rel="stylesheet">  
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type = "text/javascript" src = "/js/script.js"></script>
+
+<h1 class='title'>Preferences</h1>
+</head>
+<body>
+    <form action="/" method="GET"><button id='home'>Home</button></form>
+    <form action="/profile" method="POST">
+      <p>Time Zone:
+      <select name="mydropdown">
+        {{timezone_dropdown}}
+        <!-- <option value="EDT">EDT</option>
+        <option value="CDT">CDT</option>
+        <option value="MDT">MDT</option>
+        <option value="PDT">PDT</option> -->
+      </select> 
+        <input value="Change Time" type="submit" name = "submit"><br></p>
+    </form>
+    <form action="/profile" method = "POST">
+     
+
+
+      <fieldset>
+        <legend>Fun:</legend>
+        {% for fun_subcat in fun %}
+                    <input type="checkbox" id="myCheck" name = "fun" value= "{{fun_subcat}}"><label>{{fun_subcat}}</label><br>
+        {% endfor %}
+        Add:<input type="textbox" name = "addfun">
+      </fieldset>
+
+
+      <fieldset>
+        <legend>Relax:</legend>
+        {% for relax_subcat in relax %}
+                    <input type="checkbox" id="myCheck" name = "relax" value = "{{relax_subcat}}"><label>{{relax_subcat}}</label><br>
+        {% endfor %}
+        Add:<input type="textbox" name = "addrelax">
+      </fieldset>
+
+
+      <fieldset>
+        <legend>Learning:</legend>
+        {% for study_subcat in study %}
+                    <input type="checkbox" id="myCheck" name = "study" value = "{{study_subcat}}"><label>{{study_subcat}}</label><br>
+        {% endfor %}
+        Add:<input type="textbox" name = "addstudy">
+      </fieldset>
+      <input type = "submit" name = "submit" value = "Add">
+      <input value="Delete" type="submit" name = "submit"><br></p>
+    </form>
+
+
+
+</body>
+</html>
